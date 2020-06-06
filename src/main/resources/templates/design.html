@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+    <link rel="stylesheet" th:href="@{/css/design_styles.css}"/>
+    <script th:src="@{/js/design_functions.js}" defer></script>
+</head>
+<body>
+
+<div id="left_picture">
+    <img id="design_img" th:src="@{/images/design_img.jpg}">
+</div>
+
+<div id="list">
+    <div id="create_text_block">
+        <p id="create_text"> Create your pie </p>
+    </div>
+
+    <div id="left_block">
+
+        <div class="left_ingredient">
+            <p class="title">Meat:</p>
+            <div class="ingredient_list" th:each="ingredient : ${meat}">
+                <input th:id="${ingredient.name} + '_item'" class="ingredients" name="ingredients" type="checkbox"
+                       th:value="${ingredient.name}"/>
+                <span th:id="${ingredient.name}"
+                      th:text="${ingredient.name} + '...' + ${ingredient.price} + ' rub / kg'"
+                      th:value="${ingredient.price}">Meat ingredients</span><br/>
+            </div>
+        </div>
+
+        <div class="left_ingredient">
+            <p class="title">Nutritious:</p>
+            <div class="ingredient_list" th:each="ingredient : ${nutritious}">
+                <input th:id="${ingredient.name} + '_item'" class="ingredients" name="ingredients" type="checkbox"
+                       th:value="${ingredient.name}"/>
+                <span th:id="${ingredient.name}"
+                      th:text="${ingredient.name} + '...' + ${ingredient.price} + ' rub / kg'"
+                      th:value="${ingredient.price}">Nutritious ingredients</span><br/>
+            </div>
+        </div>
+
+        <div class="left_ingredient">
+            <p class="title">Dairy:</p>
+            <div class="ingredient_list" th:each="ingredient : ${dairy}">
+                <input th:id="${ingredient.name} + '_item'" class="ingredients" name="ingredients" type="checkbox"
+                       th:value="${ingredient.name}"/>
+                <span th:id="${ingredient.name}"
+                      th:text="${ingredient.name} + '...' + ${ingredient.price} + ' rub / kg'"
+                      th:value="${ingredient.price}">Dairy ingredients</span><br/>
+            </div>
+        </div>
+
+        <div class="left_ingredient">
+            <p class="title">Other:</p>
+            <div class="ingredient_list" th:each="ingredient : ${other}">
+                <input th:id="${ingredient.name} + '_item'" class="ingredients" name="ingredients" type="checkbox"
+                       th:value="${ingredient.name}"/>
+                <span th:id="${ingredient.name}"
+                      th:text="${ingredient.name} + '...' + ${ingredient.price} + ' rub / kg'"
+                      th:value="${ingredient.price}">Other ingredients</span><br/>
+            </div>
+        </div>
+
+        <div id="big_ingredient" class="left_ingredient">
+            <p class="title">Sweet:</p>
+            <div class="ingredient_list" th:each="ingredient : ${sweet}">
+                <input th:id="${ingredient.name} + '_item'" class="ingredients" name="ingredients" type="checkbox"
+                       th:value="${ingredient.name}"/>
+                <span th:id="${ingredient.name}"
+                      th:text="${ingredient.name} + '...' + ${ingredient.price} + ' rub / kg'"
+                      th:value="${ingredient.price}">Sweet ingredients</span><br/>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="pictures">
+        <img id="central_picture" th:src="@{/images/design_central_picture.jpg}">
+        <img id="meat" th:src="@{/images/meat.png}">
+        <img id="fish" th:src="@{/images/fish.png}">
+        <img id="egg" th:src="@{/images/egg.png}">
+        <img id="potatoes" th:src="@{/images/potatoes.png}">
+        <img id="cheese" th:src="@{/images/cheese.png}">
+        <img id="cottage_cheese" th:src="@{/images/cottage_cheese.png}">
+        <img id="dill" th:src="@{/images/dill.png}">
+        <img id="species" th:src="@{/images/species.png}">
+        <img id="apple" th:src="@{/images/apple.png}">
+        <img id="lemon" th:src="@{/images/lemon.png}">
+        <img id="strawberry" th:src="@{/images/strawberry.png}">
+        <img id="cherry" th:src="@{/images/cherry.png}">
+        <img id="raspberry" th:src="@{/images/raspberry.png}">
+    </div>
+
+    <div id="button_block">
+        <div id="total_block"> <p id="total_text"> Total: <p id="sum"> 0 </p> </p>  <p id="rub"> rub </p> </div>
+        <div id="create_button_frame"> <a href="/" id="create_button"> <div id="create_button_text"> Create </div> </a> </div>
+    </div>
+
+</div>
+
+</body>
+</html>

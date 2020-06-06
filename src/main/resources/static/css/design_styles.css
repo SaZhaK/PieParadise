@@ -1,0 +1,263 @@
+#left_picture {
+margin: -1% 0 0 -1%;
+height: 101vh;
+width: 25%;
+float: left;
+}
+
+#left_picture p {
+position: absolute;
+font-weight: bold;
+font-style: italic;
+color: black;
+}
+
+#design_img {
+width: 100%;
+height: 100%;
+}
+
+#list {
+display: inline-block;
+margin: -1% 0 0 0;
+height: 100vh;
+width: 75%;
+}
+
+#create_text_block {
+width: 100%;
+height: 10%;
+}
+
+#create_text {
+margin-top: 3%;
+text-align: center;
+font-style: italic;
+font-size: 50px;
+}
+
+#left_block {
+height: 60%;
+width: 20%;
+margin-left: 5%;
+float: left;
+}
+
+#central_picture {
+display: inline-block;
+margin-left: 3%;
+width: 65%;
+height: 65%;
+}
+
+.left_ingredient {
+border-radius: 10px;
+box-shadow: 0 5px 5px rgba(122,122,122,0.5);
+width: 100%;
+height: 18%;
+}
+
+#big_ingredient {
+height: 28%;
+}
+
+.title {
+text-align: center;
+font-weight: bold;
+font-style: italic;
+font-size: 110%;
+}
+
+.ingredient_list {
+font-size: 108%;
+font-style: italic;
+margin-left: 10%;
+}
+
+#button_block {
+width: 100%;
+height: 10%;
+}
+
+#create_button_frame {
+width: 14%;
+height: 100%;
+margin-left: 45%;
+}
+
+#create_button_text {
+font-size: 160%;
+font-weight: bold;
+color: white;
+text-align: center;
+text-shadow: 0px 0px 2px #131313;
+margin-top: 10%;
+}
+
+#create_button {
+position: absolute;
+margin-left: 1%;
+width: 8%;
+height: 7%;
+background-color: #ffd000;
+border-radius: 30px;
+border: none;
+outline: none;
+text-decoration: none;
+box-shadow: 0 5px 5px rgba(122,122,122,0.5);
+}
+
+#create_button:hover {
+width: 9%;
+height: 8%;
+}
+
+#total_block {
+float: left;
+height: 100%;
+width: 20%;
+margin-left: 5%;
+}
+
+#total_text {
+float: left;
+margin-left: 5%;
+margin-top: 10%;
+font-size: 30px;
+font-style: italic;
+}
+
+#sum {
+margin-top: 10%;
+margin-left: 5%;
+font-size: 30px;
+font-style: italic;
+}
+
+#rub {
+margin-left: 45%;
+margin-top: -23%;
+font-size: 30px;
+font-style: italic;
+}
+
+
+
+
+
+#meat {
+width: 170px;
+height: 150px;
+position: absolute;
+margin-left: -40%;
+margin-top: 7%;
+opacity: 0;
+}
+
+#fish {
+width: 170px;
+height: 120px;
+position: absolute;
+margin-left: -17%;
+margin-top: 8%;
+opacity: 0;
+}
+
+#egg {
+width: 140px;
+height: 120px;
+position: absolute;
+margin-left: -35%;
+margin-top: 13%;
+opacity: 0;
+}
+
+#potatoes {
+width: 130px;
+height: 110px;
+position: absolute;
+margin-left: -30%;
+margin-top: 9%;
+opacity: 0;
+}
+
+#cheese {
+width: 170px;
+height: 150px;
+position: absolute;
+margin-left: -28%;
+margin-top: 13%;
+opacity: 0;
+}
+
+#cottage_cheese {
+width: 160px;
+height: 140px;
+position: absolute;
+margin-left: -24%;
+margin-top: 7%;
+opacity: 0;
+}
+
+#dill {
+width: 130px;
+height: 110px;
+position: absolute;
+margin-left: -42%;
+margin-top: 13%;
+opacity: 0;
+}
+
+#species {
+width: 130px;
+height: 110px;
+position: absolute;
+margin-left: -20%;
+margin-top: 21%;
+opacity: 0;
+}
+
+#apple {
+width: 170px;
+height: 150px;
+position: absolute;
+margin-left: -34%;
+margin-top: 17%;
+opacity: 0;
+}
+
+#lemon {
+width: 170px;
+height: 150px;
+position: absolute;
+margin-left: -41%;
+margin-top: 15%;
+opacity: 0;
+}
+
+#strawberry {
+width: 160px;
+height: 150px;
+position: absolute;
+margin-left: -16%;
+margin-top: 12%;
+opacity: 0;
+}
+
+#cherry {
+width: 160px;
+height: 140px;
+position: absolute;
+margin-left: -28%;
+margin-top: 20%;
+opacity: 0;
+}
+
+#raspberry {
+width: 170px;
+height: 150px;
+position: absolute;
+margin-left: -22%;
+margin-top: 15%;
+opacity: 0;
+}

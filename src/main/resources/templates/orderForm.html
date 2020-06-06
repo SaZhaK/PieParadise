@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order form</title>
+    <link rel="stylesheet" th:href="@{/css/orderForm_styles.css}"/>
+    <script th:src="@{/js/orderForm_functions.js}" defer></script>
+</head>
+<body>
+
+<img th:id="order_img" th:src="@{/images/order_img.jpg}">
+
+<div id="left_block">
+    <p id="title">Complete your order</p>
+    <p id="chosen"> You have chosen: </p>
+
+    <div id="products_list">
+    </div>
+
+    <div id="fields">
+        <div class="form_text">
+            <label>Name:</label>
+            <input id="name" name="name" type="text"/>
+        </div>
+
+        <br>
+
+        <div class="form_text">
+            <label>LastName:</label>
+            <input id="lastName" name="lastName" type="text"/>
+        </div>
+
+        <br>
+
+        <div class="form_text">
+            <label>Address:</label>
+            <input id="address" name="address" type="text"/>
+        </div>
+
+        <br>
+
+        <div class="form_text">
+            <label>Mail:</label>
+            <input id="mail" name="mail" type="text"/>
+        </div>
+
+        <br>
+
+        <div class="form_text">
+            <label>Phone number:</label>
+            <input id="phone" name="phone" type="text"/>
+        </div>
+
+        <br>
+
+        <div class="form_text">
+            <label>Card Number:</label>
+            <input id="cardNumber" name="cardNumber" type="text"/>
+        </div>
+
+        <div id="error" class="validationError"> You have to fill the information correctly to complete your order </div>
+
+        <div id="total_block"> <p id="total_text"> Total: <p id="sum"> 0 </p> </p>  <p id="rub"> rub </p> </div>
+
+        <a href="/" id="submit_button"> Complete </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pie Paradise</title>
+    <link rel="stylesheet" th:href="@{/css/home_styles.css}"/>
+    <script th:src="@{/js/home_functions.js}" defer></script>
+</head>
+<body>
+<div id="home_screen">
+    <img id="home_img" th:src="@{/images/pie.jpg}"/>
+    <div class="main_text" id="main_text_first_letter"> W</div>
+    <div class="main_text" id="main_text_top"> elcome to Pie</div>
+    <div class="main_text" id="main_text_bottom"> Paradise!</div>
+    <div class="main_text" id="slogan"> Cook once, eat everywhere</div>
+</div>
+
+<a href="orders/current"> <img id="basket" th:src="@{/images/basket.png}"/> <a/>
+
+    <p id="offer_text"> Our products </p>
+    <div id="container">
+        <img id="offer" th:src="@{/images/new.png}">
+
+        <div id="create_block">
+            <img th:src="@{/images/custom_pie.jpeg}">
+            <p id="create_text">As our company is only starting to grow at this moment,
+                we understand that we may not be able to offer our customers everything they would like.
+                That's why we suggest you create your own pie using a broad range of our ingredients. </p>
+            <p> Enjoy yourself! </p>
+            <a id="create_button" href="design">Create</a>
+        </div>
+    </div>
+
+    <div id="products" th:each="product : ${products}">
+        <div class="product_frame">
+            <img th:src="@{${product.image}}">
+            <b><p th:text="${product.name}"></b>
+            <p id="ingredients_text" th:text="${product.ingredients}">
+            <p id="description_text" th:text="${product.description}"></p>
+            <br>
+            <input th:id="${product.id} + ' ' + ${product.name} + ' ' + ${product.price}"
+                   class="price_button" type="button" th:value="${product.price} + ' rub / kg'">
+        </div>
+    </div>
+
+    <div id="popup">
+        <div class="popup-content">
+            <div class="popup-body"> Successfully added to cart! </div>
+            <input id="close" type="button" value="Ok">
+        </div>
+    </div>
+
+</body>
+</html>

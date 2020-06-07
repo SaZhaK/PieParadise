@@ -35,12 +35,12 @@ public class MailSender {
             emailText += " - x" + productInfo.getAmount() + " " + productInfo.getName() + " ..... " + productInfo.getPrice() + " rub\n";
         }
 
-        for (int i = 0; i < customPieList.size(); i++) {
+        for (CustomPie customPie : customPieList) {
             emailText += " - Custom pie: ";
 
-            List<String> ingredients = customPieList.get(i).getIngredients();
-            for (int j = 0; j < ingredients.size(); j++) {
-                emailText += ingredients.get(i) + " ";
+            List<String> ingredients = customPie.getIngredients();
+            for (String ingredient : ingredients) {
+                emailText += ingredient + ", ";
             }
         }
 

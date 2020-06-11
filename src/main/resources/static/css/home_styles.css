@@ -1,40 +1,59 @@
-#home_screen {
-margin: -1% 0.4% 0% -1%;
-width: 101.4%;
+#img_container {
+margin-top: -1%;
+margin-left: -1%;
+height: 800px;
+width: 101%;
 overflow: hidden;
-}
-
-#home_img {
-width: 100%;
-margin: -12% 0% -10% 0%;
-opacity: 1;
-}
-
-.main_text {
-font-weight: bold;
-font-style: italic;
-color: white;
 position: absolute;
 }
 
-#main_text_top {
+#home_img {
+margin-top: -10%;
+width: 100%;
+opacity: 1;
+}
+
+#img_text {
+margin-top: -36%;
+width: 600px;
+height: 500px;
+font-weight: bold;
+font-style: italic;
+color: white;
+display: flex;
+flex-direction: column;
+}
+
+#first_letter {
+font-size: 110px;
+margin-left: 50px;
+}
+
+#first_line {
 font-size: 50px;
-margin: -25% 10% 10% 6%;
+position: relative;
+margin-left: -20px;
 }
 
-#main_text_bottom {
+#second_line {
 font-size: 50px;
-margin: -21% 10% 10% 3%;
+position:absolute;
+position: relative;
+margin-left: 60px;
+margin-top: -5px;
 }
 
-#main_text_first_letter {
-font-size: 100px;
-margin: -27% 10% 10% 2%;
-}
-
-#slogan {
+#third_line {
 font-size: 30px;
-margin: -12% 10% 10% 5%;
+position: relative;
+margin-left: 60px;
+margin-top: 200px;
+}
+
+#products_container {
+width: 101.4%;
+position: absolute;
+margin: 800px 0.4% 0% -1%;
 }
 
 #offer_text {
@@ -163,10 +182,10 @@ margin-left: 25%;
 
 #basket {
 position: absolute;
-width: 6%;
-height: 10%;
-margin-left: 93%;
-margin-top: -33%;
+width: 120px;
+height: 120px;
+margin-left: 90%;
+margin-top: -770px;
 }
 
 

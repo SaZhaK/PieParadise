@@ -8,15 +8,21 @@
     <script th:src="@{/js/home_functions.js}" defer></script>
 </head>
 <body>
-<div id="home_screen">
+<div id="img_container">
     <img id="home_img" th:src="@{/images/pie.jpg}"/>
-    <div class="main_text" id="main_text_first_letter"> W</div>
-    <div class="main_text" id="main_text_top"> elcome to Pie</div>
-    <div class="main_text" id="main_text_bottom"> Paradise!</div>
-    <div class="main_text" id="slogan"> Cook once, eat everywhere</div>
+    <div id="img_text">
+        <div>
+            <span id="first_letter"> W</span>
+            <span id="first_line">elcome to Pie </span>
+        </div>
+        <span id="second_line"> Paradise </span>
+        <span id="third_line"> Cook once, eat everywhere </span>
+    </div>
 </div>
 
-<a href="orders/current"> <img id="basket" th:src="@{/images/basket.png}"/> <a/>
+<div id="products_container">
+
+    <a href="orders/current"> <img id="basket" th:src="@{/images/basket.png}"/> </a>
 
     <p id="offer_text"> Our products </p>
     <div id="container">
@@ -46,10 +52,12 @@
 
     <div id="popup">
         <div class="popup-content">
-            <div class="popup-body"> Successfully added to cart! </div>
+            <div class="popup-body"> Successfully added to cart!</div>
             <input id="close" type="button" value="Ok">
         </div>
     </div>
+
+</div>
 
 </body>
 </html>

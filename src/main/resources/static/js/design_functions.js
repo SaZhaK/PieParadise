@@ -151,10 +151,10 @@ document.getElementById('create_button').onclick = function() {
 
 function addTotal(price) {
     var sum = document.getElementById('sum');
-    sum.innerHTML = Number(sum.innerHTML) + Number(price);
+    sum.innerHTML = Number(sum.innerHTML.substring(0, sum.innerHTML.length - 3)) + Number(price) + ' rub';
 }
 
 function subtractTotal(price) {
     var sum = document.getElementById('sum');
-    sum.innerHTML = Number(sum.innerHTML) - Number(price);
+    sum.innerHTML = Number(sum.innerHTML.substring(0, sum.innerHTML.length - 3)) - Number(price) + ' rub';
 }

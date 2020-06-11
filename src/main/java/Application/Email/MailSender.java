@@ -44,7 +44,7 @@ public class MailSender {
             }
         }
 
-        emailText += "\nHoping to see you soon!\nHave a nice meal!\nPie paradise team";
+        emailText += "\nHoping to see you soon!\nHave a nice meal!\n\nPie paradise team";
 
         Properties properties = System.getProperties();
         properties.put("mail.smtp.host", SMTP_SERVER);

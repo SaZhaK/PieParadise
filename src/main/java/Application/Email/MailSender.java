@@ -44,6 +44,8 @@ public class MailSender {
             }
         }
 
+        emailText = emailText.substring(0, emailText.length() - 1);
+
         emailText += "\nHoping to see you soon!\nHave a nice meal!\n\nPie paradise team";
 
         Properties properties = System.getProperties();

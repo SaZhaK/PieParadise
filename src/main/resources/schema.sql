@@ -1,10 +1,3 @@
-drop table ingredients;
-drop table products;
-drop table clients;
-drop table orders;
-drop table order_to_product;
-drop table custom_to_order;
-
 create table if not exists ingredients (
 id varchar(4) not null,
 name varchar(20) not null,

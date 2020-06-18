@@ -1,3 +1,6 @@
+drop table ingredients;
+drop table products;
+
 create table if not exists ingredients (
 id varchar(4) not null,
 name varchar(20) not null,

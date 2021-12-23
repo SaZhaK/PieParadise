@@ -1,10 +1,7 @@
-FROM openjdk:8-jdk-alpine
+FROM adoptopenjdk/openjdk8:latest
 
-ARG JAR_FILE
+WORKDIR .
+RUN mkdir -p /application
+COPY /target/SpringTest-1.0-SNAPSHOT.war /application/SpringTest.war
 
-RUN mkdir -p /apps
-COPY ./target/${JAR_FILE} /apps/app.jar
-COPY ./entrypoint.sh /apps/entrypoint.sh
-
-RUN chmod +x /apps/entrypoint.sh
-CMD ["/apps/entrypoint.sh"]
+CMD java -Dserver.port=$PORT $JAVA_OPTS -jar /application/SpringTest.war

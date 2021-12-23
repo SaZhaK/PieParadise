@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8:latest
+FROM maven:3.6-alpine as DEPS
 
 WORKDIR .
 RUN mkdir -p /application
